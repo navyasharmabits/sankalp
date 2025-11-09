@@ -1,140 +1,109 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sankalp - Government Style</title>
-  <style>
-      body {
-          margin: 0;
-          font-family: "Times New Roman", serif;
-          background-color: #f2e7d8; /* beige palette */
-      }
-      header {
-          background-color: #c4b39a;
-          color: #2f2f2f;
-          padding: 20px;
-          text-align: center;
-          border-bottom: 4px solid #8c7a63;
-      }
-      nav {
-          display: flex;
-          justify-content: center;
-          background-color: #d8c7b5;
-          border-bottom: 3px solid #8c7a63;
-          position: sticky;
-          top: 0;
-          z-index: 1000;
-      }
-      nav a {
-          padding: 14px 30px;
-          text-decoration: none;
-          color: #2f2f2f;
-          font-weight: bold;
-          border-right: 2px solid #b39e86;
-      }
-      nav a:last-child {
-          border-right: none;
-      }
-      nav a:hover {
-          background-color: #bfae98;
-      }
-      section {
-          padding: 40px;
-          max-width: 900px;
-          margin: auto;
-          background-color: #f9f2e9;
-          margin-top: 40px;
-          border: 1px solid #cbb9a4;
-      }
-      h2 {
-          color: #4a3f35;
-          border-bottom: 2px solid #8c7a63;
-          padding-bottom: 8px;
-      }
-      footer {
-          background-color: #c4b39a;
-          text-align: center;
-          padding: 15px;
-          color: #2f2f2f;
-          margin-top: 40px;
-          border-top: 4px solid #8c7a63;
-      }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sankalp — Mainpage</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-      <h1>Sankalp</h1>
-      <p>Public Administration | General Affairs | History</p>
+  <!-- Navbar (shared across pages) -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="logo-placeholder" aria-hidden="true">
+        <!-- Replace with <img src="path/to/logo.png" alt="Sankalp logo"/> -->
+        <div class="logo-box">LOGO</div>
+      </div>
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="wings.html" class="nav-link">Wings</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="inductions.html" class="nav-link">Inductions</a>
+        <a href="posts.html" class="nav-link">Posts</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+        <a href="office.html" class="nav-link">Office</a>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
   </header>
 
-  <nav>
-      <a href="#mainpage">Mainpage</a>
-      <a href="#wings">Wings</a>
-      <a href="#about">About Us</a>
-      <a href="#inductions">Inductions</a>
-      <a href="#posts">Posts</a>
-      <a href="#contact">Contact Us</a>
-      <a href="#office">Office</a>
-  </nav>
+  <main class="container">
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to Sankalp</h1>
+        <p class="lead">A student body dedicated to debate, public administration, and campus civic life.</p>
+        <div class="hero-actions">
+          <a class="btn" href="wings.html">Explore Wings</a>
+          <a class="btn ghost" href="inductions.html">Join Inductions</a>
+        </div>
+      </div>
+      <div class="hero-panel">
+        <div class="card">
+          <h3>Quick Stats</h3>
+          <ul>
+            <li>Members: ~60 (aiming 100+)</li>
+            <li>Active Wings: 4</li>
+            <li>Next Induction: TBD</li>
+          </ul>
+        </div>
+        <div class="card muted">
+          <h3>Announcements</h3>
+          <p>New office hours launched — drop by the executive office for feedback and grievances.</p>
+        </div>
+      </div>
+    </section>
 
-  <section id="mainpage">
-      <h2>Mainpage</h2>
-      <p>Welcome to Sankalp, your central platform dedicated to administrative literacy, historical analysis, and general affairs. Our club aims to promote structured discourse, encourage informed participation, and build a community committed to understanding governance and society.</p>
-      <p>Latest Updates:</p>
-      <ul>
-          <li>New debate cycle announced for this month.</li>
-          <li>Reports on campus administration now available in the archives.</li>
-          <li>Office hours expanded to enhance transparency.</li>
-      </ul>
-  </section>
+    <section class="features">
+      <article class="feature-card fade-up">
+        <h2>What we do</h2>
+        <p>We host debates, write reports, organise events and serve as the voice of student governance on campus.</p>
+      </article>
 
-  <section id="wings">
-      <h2>Wings</h2>
-      <p>Sankalp consists of multiple functional divisions known as Wings. Each Wing has distinct responsibilities and operates with defined mandates to ensure smooth functioning.</p>
-      <ul>
-          <li>General Wing: Focuses on debate meets and interactive sessions.</li>
-          <li>Research Wing: Compiles reports and handles analytical documentation.</li>
-          <li>Administration Wing: Coordinates communication and logistics.</li>
-      </ul>
-  </section>
+      <article class="feature-card fade-up delay-1">
+        <h2>Upcoming</h2>
+        <p>General Wing meet every Wednesday — 6:30–8:30 pm at F107. (Example schedule)</p>
+      </article>
 
-  <section id="about">
-      <h2>About Us</h2>
-      <p>Established with a vision to cultivate informed leadership, Sankalp is the only Public Administration, General Affairs, and History-oriented club on campus. We are committed to shaping a democratic and accountable student environment through structured engagement, academic exploration, and institutional contributions.</p>
-  </section>
+      <article class="feature-card fade-up delay-2">
+        <h2>Get involved</h2>
+        <p>Participate in committees or submit a post to our Posts page to share news and analysis.</p>
+      </article>
+    </section>
 
-  <section id="inductions">
-      <h2>Inductions</h2>
-      <p>Inductions occur twice a year. The process includes registration, an aptitude assessment, group interactions, and structured observation. Selected candidates are introduced to the functioning framework of Sankalp and assigned to Wings based on interest and merit.</p>
-  </section>
+    <section class="spotlight">
+      <h2>Latest from Posts</h2>
+      <div class="post-row">
+        <article class="post-card">
+          <h3>Report: Campus Administrative Review</h3>
+          <p>Summary of the latest review — placeholder text for the post content. Edit as needed.</p>
+          <a class="small-link" href="posts.html">Read more</a>
+        </article>
 
-  <section id="posts">
-      <h2>Posts</h2>
-      <p>This section lists the major positions within Sankalp. These posts oversee decision-making, operations, planning, and documentation.</p>
-      <ul>
-          <li>Amatya (Chairperson)</li>
-          <li>Arthadyaksha (Mandate Officer)</li>
-          <li>Pravartaka (Selection Head)</li>
-          <li>Wing Coordinators</li>
-      </ul>
-  </section>
+        <article class="post-card">
+          <h3>Debate: The Role of Student Bodies</h3>
+          <p>A short note about the debate topic and outcomes. Placeholder text.</p>
+          <a class="small-link" href="posts.html">Read more</a>
+        </article>
+      </div>
+    </section>
 
-  <section id="contact">
-      <h2>Contact Us</h2>
-      <p>Reach out to us for queries, suggestions, or collaborations.</p>
-      <p>Email: sankalp-office@example.com</p>
-      <p>Room: F107</p>
-  </section>
+  </main>
 
-  <section id="office">
-      <h2>Office</h2>
-      <p>Office hours are held daily to improve transparency and allow members to interact directly with the Executive Office. You may visit between 5:30 PM and 7:30 PM.</p>
-      <p>Location: Sankalp Office, Academic Block F</p>
-  </section>
-
-  <footer>
-      <p>© 2025 Sankalp Club | Government-Style Interface</p>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <strong>Sankalp</strong>
+        <p>Student body for debate and public affairs</p>
+      </div>
+      <div>
+        <p>Built for GitHub Pages — drop your logo at <code>/logo.png</code></p>
+      </div>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
+```
+
