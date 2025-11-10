@@ -364,5 +364,25 @@ footer {
   .hero, .hero-small, .page-container {
     padding-top: 40px !important;
   }
+  /* Prevent accidental overflow */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Fix grid width issues */
+.core-activities, .sections-grid {
+  overflow-x: hidden;
+}
+
+.core-activities > *, .sections-grid > * {
+  max-width: 100%;
+  flex-shrink: 1;
+}
+
+/* Fix text overflow for nav links */
+.nav-links a {
+  white-space: normal;
+}
+
 }
 
