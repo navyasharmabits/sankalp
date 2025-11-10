@@ -1,70 +1,83 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Sankalp — About Us</title>
-<link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Sankalp</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header class="navbar" id="navbar">
-<div class="nav-inner">
-<div class="logo-placeholder">
-<div class="logo-box">LOGO</div>
-</div>
-<nav class="nav-links" id="nav-links">
-<a href="index.html" class="nav-link">Home</a>
-<a href="wings.html" class="nav-link">Wings</a>
-<a href="about.html" class="nav-link active">About Us</a>
-<a href="inductions.html" class="nav-link">Inductions</a>
-<a href="posts.html" class="nav-link">Posts</a>
-<a href="contact.html" class="nav-link">Contact Us</a>
-<a href="office.html" class="nav-link">Office</a>
-</nav>
-<button class="nav-toggle" id="nav-toggle">☰</button>
-</div>
-</header>
 
+  <!-- Global Navbar -->
+  <header class="navbar" role="banner" aria-label="Main navigation">
+    <a href="index.html" class="logo-container" aria-label="Sankalp home">
+      <img src="logo.png" alt="Sankalp Logo" class="logo" />
+    </a>
 
-<main class="container narrow">
-<section class="page-header">
-<h1>About Sankalp</h1>
-<p class="lead">History, mission and structure — placeholder text you can update later.</p>
-</section>
+    <nav class="nav-links" role="navigation" aria-label="Primary">
+      <a href="posts.html">Publications</a>
+      <a href="wings.html">Wings</a>
+      <a href="inductions.html">Inductions</a>
+      <a href="office.html">Executive Office</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html" class="active">Contact Us</a>
+      <a href="account.html">My Account</a>
+    </nav>
+  </header>
 
+  <!-- Hero Section -->
+  <section class="hero hero-small">
+    <h1>Contact Us</h1>
+    <p>Reach out to the Executive Office of Sankalp</p>
+  </section>
 
-<section class="about-content fade-up">
-<h2>Our Mission</h2>
-<p>To foster constructive debate, provide channels for student representation, and support campus civic life through transparent governance and structured events.</p>
+  <!-- Contact Section -->
+  <section class="contact-us-section container">
+    <h2>Send us your Queries</h2>
+    <p>We respond within 24–48 hours during working days.</p>
 
+    <form action="https://formspree.io/f/yourFormID" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Write your question here..." required></textarea>
 
-<h2>Structure</h2>
-<p>Sankalp is organised into wings, each with specific mandates. The executive coordinates between wings and oversees inductions and reports.</p>
+      <button type="submit" class="btn-primary">Submit</button>
+    </form>
+  </section>
 
+  <!-- Executive Office Direct Contact Info -->
+  <section class="contact-direct container">
+    <h2>Executive Office Contact</h2>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>Email</h3>
+        <p>sankalpbphc@gmail.com</p>
+      </div>
 
-<h2>Values</h2>
-<ul>
-<li>Transparency</li>
-<li>Inclusivity</li>
-<li>Responsibility</li>
-</ul>
-</section>
-</main>
+      <div class="contact-card">
+        <h3>Phone</h3>
+        <p>+91 93549 44243</p>
+      </div>
 
+      <div class="contact-card">
+        <h3>Faculty In-Charge</h3>
+        <p>Dr. Suchismita Satpathy</p>
+      </div>
+    </div>
+  </section>
 
-<footer class="site-footer">
-<div class="footer-inner">
-<div>
-<strong>Sankalp</strong>
-<p>Student body for debate and public affairs</p>
-</div>
-<div>
-<p>Contact the office for official records.</p>
-</div>
-</div>
-</footer>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <strong>Sankalp</strong>
+        <div class="footer-text">
+          Society for Awareness of National Issues and Knowledge of Administration Law and Policy – Birla Institute of Technology and Science Pilani, Hyderabad Campus
+        </div>
+      </div>
+      <div class="footer-text">Contact: sankalpbphc@gmail.com · 9354944243 · © 2025 Sankalp</div>
+    </div>
+  </footer>
 
-
-<script src="script.js"></script>
 </body>
 </html>
