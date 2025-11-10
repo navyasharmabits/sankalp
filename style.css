@@ -374,3 +374,29 @@ footer {
     padding-top: 130px;
   }
 }
+/* ========================= */
+/*  VIEW REPORT BUTTON FIX   */
+/* ========================= */
+
+.card a,
+.card button,
+.view-report-button {
+  display: inline-block;
+  max-width: 100%;
+  padding: 10px 14px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* On small screens, ensure it never overflows */
+@media (max-width: 768px) {
+  .card a,
+  .card button,
+  .view-report-button {
+    width: 100%;     /* expands to fit card width */
+    font-size: 14px; /* reduces font size to avoid text-wrapping chaos */
+  }
+}
