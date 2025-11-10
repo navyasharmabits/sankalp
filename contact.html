@@ -1,45 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Contact Us - Sankalp</title>
-<link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Sankalp</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<div class="navbar">
-<div class="logo">LOGO</div>
-<div class="navlinks">
-<a href="index.html">Home</a>
-<a href="wings.html">Wings</a>
-<a href="about.html">About Us</a>
-<a href="inductions.html">Inductions</a>
-<a href="posts.html">Posts</a>
-<a href="contact.html">Contact Us</a>
-<a href="office.html">Office</a>
-</div>
-</div>
 
+  <!-- Global Navbar -->
+  <header class="navbar" role="banner" aria-label="Main navigation">
+    <a href="index.html" class="logo-container" aria-label="Sankalp home">
+      <img src="logo.png" alt="Sankalp Logo" class="logo" />
+    </a>
 
-<div class="content">
-<h1>Contact Us</h1>
+    <nav class="nav-links" role="navigation" aria-label="Primary">
+      <a href="posts.html">Publications</a>
+      <a href="wings.html">Wings</a>
+      <a href="inductions.html">Inductions</a>
+      <a href="office.html">Executive Office</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html" class="active">Contact Us</a>
+      <a href="account.html">My Account</a>
+    </nav>
+  </header>
 
+  <!-- Hero Section -->
+  <section class="hero hero-small">
+    <h1>Contact Us</h1>
+    <p>Reach out to the Executive Office of Sankalp</p>
+  </section>
 
-<form class="contact-form">
-<label for="name">Full Name</label>
-<input id="name" type="text" placeholder="Enter your full name" />
+  <!-- Contact Section -->
+  <section class="contact-us-section container">
+    <h2>Send us your Queries</h2>
+    <p>We respond within 24–48 hours during working days.</p>
 
+    <form action="https://formspree.io/f/yourFormID" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Write your question here..." required></textarea>
 
-<label for="email">Email</label>
-<input id="email" type="email" placeholder="Enter your email address" />
+      <button type="submit" class="btn-primary">Submit</button>
+    </form>
+  </section>
 
+  <!-- Executive Office Direct Contact Info -->
+  <section class="contact-direct container">
+    <h2>Executive Office Contact</h2>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>Email</h3>
+        <p>sankalpbphc@gmail.com</p>
+      </div>
 
-<label for="query">Your Question</label>
-<textarea id="query" placeholder="Type your message..."></textarea>
+      <div class="contact-card">
+        <h3>Phone</h3>
+        <p>+91 93549 44243</p>
+      </div>
 
+      <div class="contact-card">
+        <h3>Faculty In-Charge</h3>
+        <p>Dr. Suchismita Satpathy</p>
+      </div>
+    </div>
+  </section>
 
-<button type="submit">Send Message</button>
-</form>
-</div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <strong>Sankalp</strong>
+        <div class="footer-text">
+          Society for Awareness of National Issues and Knowledge of Administration Law and Policy – Birla Institute of Technology and Science Pilani, Hyderabad Campus
+        </div>
+      </div>
+      <div class="footer-text">Contact: sankalpbphc@gmail.com · 9354944243 · © 2025 Sankalp</div>
+    </div>
+  </footer>
+
 </body>
 </html>
