@@ -1,70 +1,132 @@
-<!doctype html>
-<div class="logo-placeholder">
-<div class="logo-box">LOGO</div>
-</div>
-<nav class="nav-links" id="nav-links">
-<a href="index.html" class="nav-link">Home</a>
-<a href="wings.html" class="nav-link active">Wings</a>
-<a href="about.html" class="nav-link">About Us</a>
-<a href="inductions.html" class="nav-link">Inductions</a>
-<a href="posts.html" class="nav-link">Posts</a>
-<a href="contact.html" class="nav-link">Contact Us</a>
-<a href="office.html" class="nav-link">Office</a>
-</nav>
-<button class="nav-toggle" id="nav-toggle">☰</button>
-</div>
-</header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wings – SANKALP</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
+  <!-- Global Navbar -->
+  <header class="navbar" role="banner" aria-label="Main navigation">
+    <a href="index.html" class="logo-container" aria-label="Sankalp home">
+      <img src="logo.png" alt="Sankalp Logo" class="logo" />
+    </a>
 
-<main class="container">
-<section class="page-header">
-<h1>Our Wings</h1>
-<p class="lead">Sankalp is organised into focused wings that take charge of different activities.</p>
-</section>
+    <nav class="nav-links" role="navigation" aria-label="Primary">
+      <a href="posts.html">Publications</a>
+      <a href="wings.html" class="active">Wings</a>
+      <a href="inductions.html">Inductions</a>
+      <a href="office.html">Executive Office</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="account.html">My Account</a>
+    </nav>
+  </header>
 
+  <!-- Hero Section -->
+  <section class="hero hero-small">
+    <h1>Wings of SANKALP</h1>
+    <p>Functional Divisions of the Union</p>
+  </section>
 
-<section class="wings-grid">
-<article class="wing-card fade-up">
-<h2>General Wing</h2>
-<p>Hosts the debate meets. Independent of other wings. Meets: Wednesdays, F107, 6:30–8:30 pm.</p>
-</article>
+  <!-- Wings Overview Section -->
+  <section class="container" style="text-align:center; margin-top:40px;">
+    <p style="max-width:900px;margin:auto;font-size:18px;line-height:1.6;">
+      SANKALP functions through distinct organizational Wings. Each Wing has a 
+      clearly defined mandate, operational purpose, and internal structure as 
+      listed in the Second Schedule. Wings may be active or inactive depending on 
+      operational requirements. Below are the Wings and their defined responsibilities.
+    </p>
+  </section>
 
+  <!-- Wings Grid -->
+  <section class="container" style="margin-top:40px;">
+    <div class="wings-grid">
 
-<article class="wing-card fade-up delay-1">
-<h2>Public Administration Wing</h2>
-<p>Research, reports, and liaison with campus administration.</p>
-</article>
+      <!-- Wing 1 -->
+      <div class="wing-card">
+        <h3>General Wing</h3>
+        <p>
+          Every member of the Union is automatically a part of this Wing.  
+          Its purpose is the moral, intellectual, civic, and character development  
+          of all members.  
+          This Wing cannot be dissolved under any circumstance.
+        </p>
+      </div>
 
+      <!-- Wing 2 -->
+      <div class="wing-card">
+        <h3>Research Wing</h3>
+        <p>
+          Studies topics in deep academic detail and produces formal reports,  
+          analyses, and papers for use by the Union.
+        </p>
+      </div>
 
-<article class="wing-card fade-up delay-2">
-<h2>General Affairs Wing</h2>
-<p>Event logistics, room bookings, and coordination across wings.</p>
-</article>
+      <!-- Wing 3 -->
+      <div class="wing-card">
+        <h3>Cultural Preservation Wing</h3>
+        <p>
+          Records, protects, and promotes indigenous cultural elements of India.  
+          Exempt from language-law restrictions and may work in any language needed  
+          for cultural preservation.
+        </p>
+      </div>
 
+      <!-- Wing 4 -->
+      <div class="wing-card">
+        <h3>Implementation Wing</h3>
+        <p>
+          Supports members preparing for competitive civil services examinations.  
+          Focuses on study assistance, exam material, and academic preparation support.
+        </p>
+      </div>
 
-<article class="wing-card fade-up delay-3">
-<h2>History Wing</h2>
-<p>Archival work, publications, and heritage-focused sessions.</p>
-</article>
-</section>
+      <!-- Wing 5 -->
+      <div class="wing-card">
+        <h3>Technical Wing</h3>
+        <p>
+          Maintains and manages all technical infrastructure and logistics of the Union.  
+          Handles digital systems, operational support, and coordination.
+        </p>
+      </div>
 
+      <!-- Wing 6 -->
+      <div class="wing-card">
+        <h3>Editorial Wing</h3>
+        <p>
+          Compiles, records, edits, and maintains all reports and written documents  
+          of the Union. Produces publications and official records as directed by the Khandādhyaksha.
+        </p>
+      </div>
 
-</main>
+      <!-- Wing 7 -->
+      <div class="wing-card">
+        <h3>Outreach Wing</h3>
+        <p>
+          Manages external communication and outreach.  
+          Handles social media presence, external interactions, and induction-related publicity.
+        </p>
+      </div>
 
+    </div>
+  </section>
 
-<footer class="site-footer">
-<div class="footer-inner">
-<div>
-<strong>Sankalp</strong>
-<p>Student body for debate and public affairs</p>
-</div>
-<div>
-<p>Want to add a wing? Contact the office.</p>
-</div>
-</div>
-</footer>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <strong>Sankalp</strong>
+        <div class="footer-text">
+          Society for Awareness of National Issues and Knowledge of Administration Law and Policy – 
+          Birla Institute of Technology and Science Pilani, Hyderabad Campus
+        </div>
+      </div>
+      <div class="footer-text">Contact: sankalpbphc@gmail.com · 9354944243 · © 2025 Sankalp</div>
+    </div>
+  </footer>
 
-
-<script src="script.js"></script>
 </body>
 </html>
