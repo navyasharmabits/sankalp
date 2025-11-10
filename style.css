@@ -386,3 +386,29 @@ html, body {
 
 }
 
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0;
+  }
+
+  .logo-container {
+    margin-bottom: 8px;
+  }
+
+  .nav-links {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* center the links */
+    gap: 4px;
+  }
+
+  .nav-links a {
+    flex: 0 0 45%;  /* 2 columns, symmetric */
+    text-align: center;
+    padding: 10px 0;
+  }
+}
