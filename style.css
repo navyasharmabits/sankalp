@@ -400,3 +400,82 @@ footer {
     font-size: 14px; /* reduces font size to avoid text-wrapping chaos */
   }
 }
+
+/* ========================= */
+/*  FINAL REFINEMENT FIXES   */
+/* ========================= */
+
+/* Force all grids to never overflow screen */
+.grid-gallery,
+.wings-grid,
+.pub-grid {
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Make sure the grid adapts correctly */
+@media (max-width: 768px) {
+  .grid-gallery,
+  .wings-grid,
+  .pub-grid {
+    grid-template-columns: 1fr !important; /* strict one-column layout */
+  }
+}
+
+/* Prevent cards from forcing width */
+.card,
+.wing-card,
+.pub-card {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Fix images that stretch wider than card */
+.profile-img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Fix internal elements that overflow */
+.card * {
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+/* Completely fix button overflow */
+.card a,
+.card button,
+.view-report-button,
+.pub-btn {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+/* Buttons inside flex containers must shrink */
+.card a,
+.card button {
+  flex-shrink: 1;
+  flex-grow: 0;
+}
+
+/* EXTRA: pushes content below navbar EXACTLY the right amount on mobile only */
+@media (max-width: 768px) {
+  .page-container {
+    padding-top: 160px !important; /* ensures title NEVER touches navbar */
+  }
+}
+
