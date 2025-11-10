@@ -286,4 +286,46 @@ footer {
   line-height: 1.5;
   font-size: 18px;
 }
+.pub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.pub-card {
+  background: #e8dfc8;
+  border: 1px solid #c6b89e;
+  padding: 20px;
+  border-radius: 8px;
+  line-height: 1.5;
+  font-size: 17px;
+}
+
+.pub-meta {
+  font-size: 14px;
+  color: #4a4233;
+  opacity: 0.7;
+  margin-bottom: 10px;
+}
+
+.pub-desc {
+  margin: 10px 0 15px 0;
+  font-size: 16px;
+}
+
+.pub-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #d8cfb8;
+  color: #4a4233;
+  border-radius: 6px;
+  text-decoration: none;
+  border: 1px solid #c6b89e;
+  transition: background 0.3s ease;
+}
+
+.pub-btn:hover {
+  background: #cfc6af;
+}
 
